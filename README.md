@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project is a **Dynamic DNS (DDNS) Updater** designed to keep your **Cloudflare DNS records** in sync with your dynamically changing public IP address. The script runs inside a **Docker container**, checks your IP at a set interval, and updates Cloudflare when a change is detected. It also includes **email notifications** and **rotating logs** for improved reliability and maintainability.
+This project is a rudimentary **Dynamic DNS (DDNS) Updater** designed to keep your **Cloudflare DNS records** in sync with your dynamically changing public IP address. The script runs inside a **Docker container**, checks your IP at a set interval, and updates Cloudflare when a change is detected. It also includes **email notifications** and **rotating logs** for improved reliability and maintainability.
 
 ---
 
@@ -45,6 +45,14 @@ SMTP_USER=your_email@example.com
 SMTP_PASSWORD=your_email_password
 TO_EMAIL=recipient_email@example.com
 ```
+## Docker compose 
+
+```bash
+docker-compose up -d
+```
+
+
+## Build and run container (Without docker-compose)
 
 ### **3. Build the Docker Image**
 
