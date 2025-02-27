@@ -1,0 +1,14 @@
+# Ignore environment file
+.env
+
+# Ignore log files
+ddns_update.log
+last_ip.txt
+
+# Ignore rotating log files (e.g., 1.log, 2.log, 3.log, etc.)
+[0-9]*.log
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
